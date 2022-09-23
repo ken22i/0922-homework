@@ -4,7 +4,7 @@ const int MAX=100;
 static int a[MAX];
 static int num=0;
 
-void gen(int i){
+void perm(int i){
 
 
      if(i==num){
@@ -32,6 +32,6 @@ int main(){
      printf("Input a number:");
      scanf("%d",&num);
      
-     gen(0);
+     perm(0);
      return 0;
 }
