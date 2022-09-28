@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-const int MAX=100;
+#define MAX 100
 static int a[MAX];
 static int num=0;
 
@@ -19,9 +19,9 @@ void perm(int i){
      else{
 
          a[i]=0;
-         gen(i+1);
+         perm(i+1);
          a[i]=1;
-         gen(i+1);
+         perm(i+1);
      }
 }
 
